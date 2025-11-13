@@ -139,19 +139,12 @@ The framework can be extended to other domains where customer engagement and chu
 
 ## System Workflow
 
-```mermaid
-flowchart TD
-    A[Gym Member Data] --> B[Preprocessing]
-    B --> C[Churn Prediction Model (Logistic Regression)]
-    C --> D{Predicted Churn?}
-    D -->|High Risk| E[Feedback Diagnostic & Sentiment Analysis]
-    D -->|Low Risk| F[Monitor Member]
-    E --> G[Topic Identification]
-    G --> H[Actionable Recommendations]
-    H --> I[Gym Staff Engagement]
-    E --> F
-    F --> J[Dashboard Visualization]
-    C --> J
-    H --> J
+### How it works:
+- **Gym Member Data** → cleaned & preprocessed for modeling.  
+- **Churn Prediction Model** → identifies at-risk members.  
+- **Feedback Diagnostic & Sentiment Analysis** → analyzes member feedback for sentiment.  
+- **Topic Identification & Recommendations** → generates actionable steps for staff.  
+- **Dashboard** → displays churn probabilities, sentiment, topics, and recommended actions in real time.
+
 
 
