@@ -136,3 +136,22 @@ The framework can be extended to other domains where customer engagement and chu
 - Implement **multi-language NLP support** for international gyms.
 
 
+
+## System Workflow
+
+```mermaid
+flowchart TD
+    A[Gym Member Data] --> B[Preprocessing]
+    B --> C[Churn Prediction Model (Logistic Regression)]
+    C --> D{Predicted Churn?}
+    D -->|High Risk| E[Feedback Diagnostic & Sentiment Analysis]
+    D -->|Low Risk| F[Monitor Member]
+    E --> G[Topic Identification]
+    G --> H[Actionable Recommendations]
+    H --> I[Gym Staff Engagement]
+    E --> F
+    F --> J[Dashboard Visualization]
+    C --> J
+    H --> J
+
+
