@@ -215,7 +215,7 @@ Being upfront about trade-offs and gaps, rather than glossing over them:
 
 ## Tech Stack
 
-`Python` · `pandas` / `numpy` · `scikit-learn` · `imbalanced-learn` (SMOTE) · `XGBoost` · `NLTK` · `TF-IDF` · `TensorFlow/Keras` (LSTM prototype) · `Streamlit`
+`Python` · `pandas` / `numpy` · `scikit-learn` · `imbalanced-learn` (SMOTE) · `XGBoost` · `NLTK` · `TF-IDF` · `TensorFlow/Keras`· `Streamlit`
 
 ---
 
