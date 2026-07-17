@@ -87,8 +87,8 @@ No missing values, no duplicates. Class imbalance handled with **SMOTE inside th
 
 ```bash
 # Clone the repo
-git clone <repo-url>
-cd gym-retention-system
+git clone https://github.com/JoyMurengi/AI-Powered-Gym-Member-Retention-and-Engagement-System
+cd AI-Powered-Gym-Member-Retention-and-Engagement-System
 
 # --- Option A: Run the notebooks ---
 python3 -m venv venv && source venv/bin/activate
@@ -212,6 +212,7 @@ Being upfront about trade-offs and gaps, rather than glossing over them:
 - Add out-of-time validation (train on earlier cohorts, validate on later ones) once longitudinal data is available.
 - Tie the decision threshold to an explicit cost matrix (cost of a missed churner vs. cost of an unnecessary offer).
 - Add SHAP values to the dashboard alongside the raw churn probability, for case-level explainability the retention team can act on directly.
+  
 
 ## Tech Stack
 
