@@ -14,6 +14,7 @@ A churn-prediction and feedback-diagnostic pipeline built on a 4,000-member gym 
 
 📊 **[Project Presentation](https://member-mind-pro.lovable.app/)** — Lovable  Interactive presentation showcasing the business problem, data science approach, model results, and proposed product experience. This was created for the project presentation and is **not** a second deployment of the machine learning model.
 
+🏆 **Recognition:** This project was featured on the **Wall of Fame** at **Zindua School**.
 
 **TL;DR**: The final tuned Logistic Regression model catches **~90% of members who churn** (recall) with strong overall ranking power (**ROC AUC 0.967**), and is paired with an NLP diagnostic layer that reads a member's free-text feedback and routes a specific, churn-status-aware recommendation to the right team.
 
@@ -219,8 +220,8 @@ Being upfront about trade-offs and gaps, rather than glossing over them:
 
 ---
 
-🏆 **Recognition:** This project was featured on the **Wall of Fame** at **Zindua School**.
- **[Project Presentation](https://member-mind-pro.lovable.app/)**
+
+
 
 ## Contact
 
