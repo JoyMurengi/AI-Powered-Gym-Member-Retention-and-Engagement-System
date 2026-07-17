@@ -8,7 +8,13 @@
 
 A churn-prediction and feedback-diagnostic pipeline built on a 4,000-member gym dataset. The project goes from raw EDA through model comparison, hyperparameter tuning, feature-importance analysis, and an NLP diagnostic layer, deployed as a live Streamlit dashboard — the full path from notebook to a tool a retention team could actually use.
 
-**🔗 [Live Demo](https://ai-powered-gym-member-retention-and-engagement-system-fnqonf9r.streamlit.app/)** — try it with your own inputs, no setup required.
+## Project Showcase
+
+🔗 **[Live Demo](https://ai-powered-gym-member-retention-and-engagement-system-fnqonf9r.streamlit.app/)** — The working machine learning application. Try it with your own inputs; no setup required.
+
+📊 **[Project Presentation](https://member-mind-pro.lovable.app/)** — Interactive presentation showcasing the business problem, data science approach, model results, and proposed product experience. This was created for the project presentation and is **not** a second deployment of the machine learning model.
+
+🏆 **Recognition:** This project was featured on the **Wall of Fame** at **Zindua School**.
 
 **TL;DR**: The final tuned Logistic Regression model catches **~90% of members who churn** (recall) with strong overall ranking power (**ROC AUC 0.967**), and is paired with an NLP diagnostic layer that reads a member's free-text feedback and routes a specific, churn-status-aware recommendation to the right team.
 
@@ -132,7 +138,6 @@ Four candidates benchmarked under identical preprocessing. Primary metric: **ROC
 | Random Forest | 0.9038 | 0.8054 | 0.8396 | 0.8222 | 0.9580 |
 | XGBoost | 0.9025 | 0.8102 | 0.8255 | 0.8178 | 0.9559 |
 
-<img src="assets/model_comparison_dashboard.png" alt="Model comparison dashboard: ROC AUC, recall, and F1 across all four models" width="700">
 
 - **Winner: Logistic Regression** — best ROC AUC of the four, and a near-zero train/test gap (0.906 vs. 0.904 accuracy), unlike Random Forest (0.95 train vs. 0.90 test), which pointed to mild overfitting.
 - **Hyperparameter tuning**: `GridSearchCV` (5-fold stratified, scored on F1) over penalty/`C`/solver. Best params: `C=10, penalty='l2', solver='saga'` (CV F1 = 0.836). Tuning confirmed the untuned defaults were already near-optimal — reported as-is rather than dressed up as a bigger win than the data supports.
