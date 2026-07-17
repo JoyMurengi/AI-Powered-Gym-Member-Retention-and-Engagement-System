@@ -12,9 +12,8 @@ A churn-prediction and feedback-diagnostic pipeline built on a 4,000-member gym 
 
 🔗 **[Live Demo](https://ai-powered-gym-member-retention-and-engagement-system-fnqonf9r.streamlit.app/)** — The working machine learning application. Try it with your own inputs; no setup required.
 
-📊 **[Project Presentation](https://member-mind-pro.lovable.app/)** — Interactive presentation showcasing the business problem, data science approach, model results, and proposed product experience. This was created for the project presentation and is **not** a second deployment of the machine learning model.
+📊 **[Project Presentation](https://member-mind-pro.lovable.app/)** — Lovable  Interactive presentation showcasing the business problem, data science approach, model results, and proposed product experience. This was created for the project presentation and is **not** a second deployment of the machine learning model.
 
-🏆 **Recognition:** This project was featured on the **Wall of Fame** at **Zindua School**.
 
 **TL;DR**: The final tuned Logistic Regression model catches **~90% of members who churn** (recall) with strong overall ranking power (**ROC AUC 0.967**), and is paired with an NLP diagnostic layer that reads a member's free-text feedback and routes a specific, churn-status-aware recommendation to the right team.
 
@@ -219,6 +218,9 @@ Being upfront about trade-offs and gaps, rather than glossing over them:
 `Python` · `pandas` / `numpy` · `scikit-learn` · `imbalanced-learn` (SMOTE) · `XGBoost` · `NLTK` · `TF-IDF` · `TensorFlow/Keras` (LSTM prototype) · `Streamlit`
 
 ---
+
+🏆 **Recognition:** This project was featured on the **Wall of Fame** at **Zindua School**.
+ **[Project Presentation](https://member-mind-pro.lovable.app/)**
 
 ## Contact
 
